@@ -19,6 +19,7 @@ if (!is_null($events['events'])) {
 			// Build message to reply back
 			$messages = [
 				'type' => 'text',
+				'text' => $text
 				'hi' => 'สวัสดีครับ',
 				'ชื่ออะไร' => 'บอทไง',
 				'ใช่หรอ' => 'ใช่ดิ',
