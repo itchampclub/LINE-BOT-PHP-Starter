@@ -19,8 +19,7 @@ if (!is_null($events['events'])) {
 			// Build message to reply back
 			$messages = [
 				'type' => 'text',
-				'75' => '777'
-				'77' => '55'
+				'text' => '555 j'
 			];
 
 			// Make a POST Request to Messaging API to reply to sender
