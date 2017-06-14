@@ -20,11 +20,11 @@ if (!is_null($events['events'])) {
 			$messages =     "messages":[
         {
             "type":"text",
-            "text":"Hello, world1"
+            "text":"Hoge"
         },
         {
             "type":"text",
-            "text":"Hello, world2"
+            "text":"Fuga?"
         }
     ];
 
