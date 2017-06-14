@@ -19,7 +19,11 @@ if (!is_null($events['events'])) {
 			// Build message to reply back
 			$messages = [
 				'type' => 'text',
-				'text' => '555 j'
+				'hi' => 'สวัสดีครับ',
+				'ชื่ออะไร' => 'บอทไง',
+				'ใช่หรอ' => 'ใช่ดิ',
+				'หรอ' => 'อย่าถามมาก',
+				'เห้อ' => 'แล้วไง',
 			];
 
 			// Make a POST Request to Messaging API to reply to sender
