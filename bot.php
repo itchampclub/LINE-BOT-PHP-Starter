@@ -58,7 +58,7 @@ if (strpos($_msg, 'สอน') !== false) {
     $arrPostData = array();
     $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
     $arrPostData['messages'][0]['type'] = "text";
-    $arrPostData['messages'][0]['text'] = 'บอทไม่เข้าใจ คุณสอนได้เพียงพิมพ์: สอน[คำถาม|คำตอบ]';
+    $arrPostData['messages'][0]['text'] = 'บอทไม่เข้าใจ คุณสอนได้แค่พิมพ์: สอน[คำถาม|คำตอบ]';
   }
 }
 
