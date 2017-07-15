@@ -23,7 +23,7 @@ if (strpos($_msg, 'สอ') !== false) {
     $x_tra = str_replace("สอ","", $_msg);
     $pieces = explode(":", $x_tra);
     $_question=str_replace("น","",$pieces[0]);
-    $_answer=str_replace("?","",$pieces[1]);
+    $_answer=str_replace("","",$pieces[1]);
     //Post New Data
     $newData = json_encode(
       array(
