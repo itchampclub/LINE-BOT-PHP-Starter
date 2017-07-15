@@ -57,7 +57,7 @@ if (strpos($_msg, '@') !== false) {
     $arrPostData = array();
     $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
     $arrPostData['messages'][0]['type'] = "text";
-    $arrPostData['messages'][0]['text'] = 'ไม่มีคำตอบ วิธีสอนพิมพ์: @คำถาม&คำตอบ';
+    $arrPostData['messages'][0]['text'] = 'บอทไม่รู้ วิธีสอนพิมพ์: @คำถาม&คำตอบ';
   }
 }
 
