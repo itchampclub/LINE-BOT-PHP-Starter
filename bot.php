@@ -18,11 +18,11 @@ $url = 'https://api.mlab.com/api/1/databases/itbot/collections/linebot?apiKey='.
 $json = file_get_contents('https://api.mlab.com/api/1/databases/itbot/collections/linebot?apiKey='.$api_key.'&q={"question":"'.$_msg.'"}');
 $data = json_decode($json);
 $isData=sizeof($data);
-if (strpos($_msg, 'สอน') !== false) {
-  if (strpos($_msg, 'สอน') !== false) {
-    $x_tra = str_replace("สอน","", $_msg);
-    $pieces = explode("/n", $x_tra);
-    $_question=str_replace("/n","",$pieces[0]);
+if (strpos($_msg, '@') !== false) {
+  if (strpos($_msg, '@') !== false) {
+    $x_tra = str_replace("@","", $_msg);
+    $pieces = explode("&", $x_tra);
+    $_question=str_replace("","",$pieces[0]);
     $_answer=str_replace("","",$pieces[1]);
     //Post New Data
     $newData = json_encode(
