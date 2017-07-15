@@ -21,7 +21,7 @@ $isData=sizeof($data);
 if (strpos($_msg, 'สอ') !== false) {
   if (strpos($_msg, 'สอ') !== false) {
     $x_tra = str_replace("สอ","", $_msg);
-    $pieces = explode(":", $x_tra);
+    $pieces = explode("/", $x_tra);
     $_question=str_replace("น","",$pieces[0]);
     $_answer=str_replace("","",$pieces[1]);
     //Post New Data
@@ -57,7 +57,7 @@ if (strpos($_msg, 'สอ') !== false) {
     $arrPostData = array();
     $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
     $arrPostData['messages'][0]['type'] = "text";
-    $arrPostData['messages'][0]['text'] = 'บอทไม่เข้าใจ คุณสอนได้แค่พิมพ์: สอน[คำถาม|คำตอบ]';
+    $arrPostData['messages'][0]['text'] = 'บอทไม่เข้าใจ สอนได้แค่พิมพ์: สอนคำถาม/คำตอบ';
   }
 }
 
