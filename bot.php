@@ -43,7 +43,7 @@ if (strpos($_msg, '@') !== false) {
     $arrPostData = array();
     $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
     $arrPostData['messages'][0]['type'] = "text";
-    $arrPostData['messages'][0]['text'] = 'ขอบคุณที่สอนครับ';
+    $arrPostData['messages'][0]['text'] = 'รับทราบจ้า';
   }
 }else{
   if($isData >0){
@@ -57,7 +57,7 @@ if (strpos($_msg, '@') !== false) {
     $arrPostData = array();
     $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
     $arrPostData['messages'][0]['type'] = "text";
-    $arrPostData['messages'][0]['text'] = 'บอทไม่เข้าใจ สอนได้แค่พิมพ์: สอนคำถาม/คำตอบ';
+    $arrPostData['messages'][0]['text'] = 'ไม่มีคำตอบ วิธีสอนพิมพ์: @คำถาม&คำตอบ';
   }
 }
 
