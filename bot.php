@@ -21,8 +21,8 @@ $isData=sizeof($data);
 if (strpos($_msg, 'สอน') !== false) {
   if (strpos($_msg, 'สอน') !== false) {
     $x_tra = str_replace("สอน","", $_msg);
-    $pieces = explode(" ", $x_tra);
-    $_question=str_replace(" ","",$pieces[0]);
+    $pieces = explode("&nbsp;", $x_tra);
+    $_question=str_replace("&nbsp;","",$pieces[0]);
     $_answer=str_replace("","",$pieces[1]);
     //Post New Data
     $newData = json_encode(
