@@ -18,7 +18,7 @@ $url = 'https://api.mlab.com/api/1/databases/itbot/collections/linebot?apiKey='.
 $json = file_get_contents('https://api.mlab.com/api/1/databases/itbot/collections/linebot?apiKey='.$api_key.'&q={"question":"'.$_msg.'"}');
 $data = json_decode($json);
 $isData=sizeof($data);
-
+  if (strpos($_msg, 'สอ') !== false) {
   if (strpos($_msg, 'สอ') !== false) {
     $x_tra = str_replace("สอ","", $_msg);
     $pieces = explode(":", $x_tra);
