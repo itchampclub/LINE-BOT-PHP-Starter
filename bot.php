@@ -19,12 +19,11 @@ $json = file_get_contents('https://api.mlab.com/api/1/databases/itbot/collection
 $data = json_decode($json);
 $isData=sizeof($data);
 
-if (strpos($_msg, 'สอน') !== false) {
-  if (strpos($_msg, 'สอน') !== false) {
-    $x_tra = str_replace("สอน","", $_msg);
+  if (strpos($_msg, 'สอ') !== false) {
+    $x_tra = str_replace("สอ","", $_msg);
     $pieces = explode(":", $x_tra);
-    $_question=str_replace("(","",$pieces[0]);
-    $_answer=str_replace(")","",$pieces[1]);
+    $_question=str_replace("น","",$pieces[0]);
+    $_answer=str_replace("","",$pieces[1]);
     //Post New Data
     $newData = json_encode(
       array(
